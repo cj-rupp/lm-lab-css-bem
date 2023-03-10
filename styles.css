@@ -1,7 +1,149 @@
-/* You can delete / re-write this img class  */
+
+@import url('https://db.onlinewebfonts.com/c/45f5fadb3dbf0140e10b498c7cb030a6?family=Canterbury');
+@import url('https://www.fontspace.com/polar-vortex-font-f19340');
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/orbitron/v25/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {font-family: "Burn";
+    src: url("http://db.onlinewebfonts.com/t/0053b9787d7d6e4594d9f455663ad5c4.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:luminari;
+    font-style:normal;
+    font-weight:400;src:local('Luminari'),url(https://fonts.cdnfonts.com/s/14476/Luminari-Regular.woff) format('woff');
+    size-adjust: 89%;
+}
+
+:root {
+    --BlueGrey: #96b3d2;
+    --LightGreen: #b5e7a0;
+    background-color: lightskyblue;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.page-title__text--font {
+    font-family: 'Orbitron';
+    font-size: 2.25rem;
+    color: darkgray;
+    text-shadow: 1px 1px 2px darkslategray;
+}
 
 img {
     max-width: 200px;
+    height: 28%;
+    width: 60%;
 }
 
-/* Happy coding! */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 17%;
+    height: 28rem;
+    border-radius:5px;
+    box-shadow: 5px 5px 5px 5px gray;
+    padding: 1.75%;
+    text-align: center;
+}
+
+.card__img {
+   border: solid; 
+}
+
+.card__border--width {
+    border-width: 3px;
+}
+
+.card__button {
+    width: 35%;
+    height: 7%;
+}
+
+.no-limit {
+    border: double;
+    border-width: 5px;
+}
+
+.star-wars__button--label,
+.no-limit_button--label {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.darth-vader {
+    color: white;
+    background-color: black;
+    font-family: 'Canterbury';
+}
+
+.darth-vader__button--label {
+    font-family: 'Canterbury';
+}
+
+.darth-vader__button--color {
+    background-color: red;
+    color: white;
+}
+
+.yoda {
+    background-color: var(--LightGreen);
+    border-color: darkslategray;
+    color: darkslategray;
+    font-family: 'Luminari', sans-serif;
+}
+
+
+.yoda__button--label {
+    font-family: 'Luminari', sans-serif;
+}
+
+.yoda__button--color {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.fire {
+    background-color: black;
+    border-color: orangered;
+    color: orangered;
+    font-family: 'Burn';
+}
+
+.fire__button--label {
+    font-family: 'Burn';
+}
+
+.fire__button--color {
+    background-color: orangered;
+    color: black;
+}
+
+.ice {
+    background-color: white;
+    border-color: royalblue;
+    color: royalblue;
+    font-family: 'Polar Vortex';
+}
+
+
+.ice__button--label {
+    font-family: 'Polar Vortex';
+}
+
+.ice__button--color {
+    background-color: royalblue;
+    color: white;
+}

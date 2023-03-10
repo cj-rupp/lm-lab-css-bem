@@ -6,28 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    <title>BEM Notation &amp; OOCSS: Writing scaleable CSS</title>
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
+    <h1 class="page-title page-title__text--font">BEM Wars</h1>
     <div class="container">
-        <div>
+        <div class="card no-limit fire">
+            <h2>Fire</h2>
+            <img alt="" src="./images/fireside.webp">
+            <p>Roasting</p>
+            <p>Passion</p>
+            <p>Auto da Fe</p>
+            <p>Hell for Bosch</p>
+            <p class="no-limit__button--label">Let it...</p>
+            <button class="card__button fire__button--color fire__button--label" type="button">Burn!</button>
+        </div>
+
+        <div class="card star-wars darth-vader">
             <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
+            <img alt="Darth Vader in a Helmet" src="./images/vader.jpeg">
             <p>Nesting!</p>
             <p>Conflict!</p>
             <p>Specificity Wars!</p>
             <p>Cookies</p>
+            <button class="card__button darth-vader__button--color darth-vader__button--label" type="button">Danger</button>
+            <p class="star-wars__button--label">Do not touch!</p>
         </div>
 
-        <div>
+        <div class="card star-wars yoda">
             <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
+            <img alt="Yoda, looking inscrutable" src="./images/yoda.jpeg">
             <p>Love</p>
             <p>Beauty</p>
             <p>CSS that Scales!</p>
             <p>Great warrior. Wars not make one great!</p>
+            <button class="card__button yoda__button--color yoda__button--label" type="button">04.05.</button>
+            <p class="star-wars__button--label">With you may it be!</p>
+        </div>
+
+        <div class="card no-limit ice">
+            <h2>Ice</h2>
+            <img alt="" src="./images/snow.webp">
+            <p>Freezing</p>
+            <p>Logic</p>
+            <p>Cryogenics</p>
+            <p>Dante's Hell</p>
+            <p class="no-limit__button--label">Let it...</p>
+            <button class="card__button ice__button--color ice__button--label" type="button">Snow!</button>
         </div>
     </div>
 </body>
